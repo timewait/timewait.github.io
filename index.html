@@ -9,7 +9,7 @@
 <meta property="og:description" content="Ethan (Zhiyong) Ma, founder of ComputeBank. Publications and engineering experience.">
 <meta property="og:type" content="website">
 <title>Ethan Ma | ComputeBank Founder, Applied ML &amp; AI Security</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b3463'/%3E%3Cpath d='M17 16h30v6H23v7h20v6H23v7h24v6H17z' fill='%23e5f0ff'/%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="./assets/computebank-mark.svg">
 <style>
 :root{color-scheme:light;--bg:#f7f8f6;--ink:#1a252e;--sub:#46545e;--quiet:#536570;--line:#d5dedf;--accent:#164a81;--panel:#e8f0f7;--card:#fff;--mono:ui-monospace,SFMono-Regular,Consolas,monospace}
 *,*::before,*::after{box-sizing:border-box}
@@ -39,13 +39,14 @@ footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.55rem;padd
 .portrait img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:50% 93%}
 .portrait{position:relative}.portrait img.portrait-light{position:absolute;inset:0;height:100%;filter:brightness(1.36);mask-image:radial-gradient(ellipse 3.1% 4.7% at 42.75% 40%,#000 26%,rgba(0,0,0,.75) 53%,transparent 100%);pointer-events:none}
 .role{display:block;margin-top:.4rem;color:var(--accent);font-weight:700}
+.home img{display:block;width:155px;max-width:100%;height:auto}
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <div class="wrap">
 <header class="top">
-<a href="#main" class="home">Ethan Ma</a>
+<a href="#main" class="home" aria-label="Ethan Ma, home"><img src="./assets/computebank-logo.svg" width="155" height="38" alt="ComputeBank"></a>
 <nav aria-label="Main navigation"><a href="#research">Research</a><a href="#experience">Experience</a><a href="#education">Education</a></nav>
 </header>
 <main id="main">
@@ -59,8 +60,8 @@ footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.55rem;padd
 <div class="actions"><a class="primary" href="#research">Read publications ↓</a></div>
 </div>
 <figure class="figure portrait">
-<img src="./assets/riverside-portrait.webp" width="840" height="1120" alt="Ethan Ma standing under a tree beside a river" fetchpriority="high" decoding="async">
-<img class="portrait-light" aria-hidden="true" alt="" src="./assets/riverside-portrait.webp" width="840" height="1120" decoding="async">
+<img src="./assets/portrait-720.webp" srcset="./assets/portrait-480.webp 480w, ./assets/portrait-720.webp 720w" sizes="(max-width: 464px) calc(100vw - 2rem), (max-width: 592px) calc(100vw - 3rem), (max-width: 736px) 544px, (max-width: 1136px) 38vw, 412px" width="720" height="960" alt="Ethan Ma standing under a tree beside a river" fetchpriority="high" decoding="async">
+<img class="portrait-light" aria-hidden="true" alt="" src="./assets/portrait-720.webp" srcset="./assets/portrait-480.webp 480w, ./assets/portrait-720.webp 720w" sizes="(max-width: 464px) calc(100vw - 2rem), (max-width: 592px) calc(100vw - 3rem), (max-width: 736px) 544px, (max-width: 1136px) 38vw, 412px" width="720" height="960" decoding="async">
 </figure>
 </section>
 
