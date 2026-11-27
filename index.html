@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Ethan (Zhiyong) Ma works on search, data quality, and AI security. Selected research and engineering experience.">
+<meta name="theme-color" content="#f7f8f6">
+<meta property="og:title" content="Ethan Ma | Applied ML & AI Security">
+<meta property="og:description" content="Selected research and engineering work by Ethan (Zhiyong) Ma.">
+<meta property="og:type" content="website">
+<title>Ethan Ma | Applied ML &amp; AI Security</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b3463'/%3E%3Cpath d='M17 16h30v6H23v7h20v6H23v7h24v6H17z' fill='%23e5f0ff'/%3E%3C/svg%3E">
+<style>
+:root{color-scheme:light;--bg:#f7f8f6;--ink:#1a252e;--sub:#46545e;--quiet:#536570;--line:#d5dedf;--accent:#164a81;--panel:#e8f0f7;--card:#fff;--mono:ui-monospace,SFMono-Regular,Consolas,monospace}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--accent);text-underline-offset:.22em}a:hover{text-decoration-thickness:2px}a:focus-visible{outline:2px solid var(--accent);outline-offset:5px}
+.wrap{width:min(68rem,calc(100% - 3rem));margin:auto}.skip{position:absolute;top:-5rem;left:1rem;padding:.5rem;background:white;z-index:2}.skip:focus{top:1rem}
+.top{display:flex;gap:1rem;justify-content:space-between;align-items:center;padding:1.05rem 0;border-bottom:1px solid var(--line)}
+.home{white-space:nowrap;font-weight:730;letter-spacing:-.025em;color:var(--ink);text-decoration:none}
+nav{display:flex;gap:.3rem 1.1rem;flex-wrap:wrap}nav a{color:var(--sub);font-size:.88rem;font-weight:600;padding:.35rem .1rem;text-decoration:none}nav a:hover{text-decoration:underline}
+.hero{display:grid;grid-template-columns:1.45fr 1fr;gap:clamp(1.5rem,5vw,5rem);align-items:center;padding:clamp(3rem,9vw,7rem) 0 clamp(3rem,8vw,5.5rem)}
+.tag,.eyebrow,.label,.index{font:normal .76rem/1.55 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--quiet)}.tag,.eyebrow{margin:0 0 .8rem;color:var(--accent)}
+h1,h2,h3,p{margin:0}h1{font-family:Georgia,"Times New Roman",serif;font-weight:normal;line-height:.97;letter-spacing:-.048em;font-size:clamp(3.7rem,9vw,7.3rem);margin-bottom:.7rem}
+.alias{color:var(--sub);font-size:1rem;margin-bottom:1.3rem}.alias span{margin-left:.45rem}
+.lead{font-size:clamp(1.17rem,2.1vw,1.43rem);font-weight:650;line-height:1.4;max-width:29rem;letter-spacing:-.025em}
+.intro{color:var(--sub);max-width:34rem;margin-top:.8rem}.actions{display:flex;align-items:center;gap:.7rem 1.2rem;flex-wrap:wrap;margin-top:1.6rem}.actions a{font-weight:650;font-size:.9rem}.actions .primary{display:inline-block;background:var(--accent);color:white;padding:.62rem .95rem;border-radius:.45rem;text-decoration:none}.actions .primary:hover{background:#0b3766}
+.figure{background:var(--panel);border:1px solid #cbd9e6;border-radius:.65rem;margin:0;overflow:hidden}.figure svg{display:block;width:100%;height:auto;aspect-ratio:4/3}.figure figcaption{padding:.75rem 1rem;border-top:1px solid #cbd9e6;color:#304a62;font:.68rem/1.6 var(--mono);letter-spacing:.11em;text-transform:uppercase}
+.section{padding:2.5rem 0 3rem;border-top:1px solid var(--line);display:grid;grid-template-columns:minmax(9.5rem,1fr) minmax(0,3.2fr);gap:1.65rem 2.5rem;scroll-margin-top:1rem}
+h2{font-family:Georgia,"Times New Roman",serif;font-weight:normal;font-size:clamp(2.2rem,4.5vw,3.3rem);letter-spacing:-.05em;line-height:1.05}.section-head .index{display:block;margin-bottom:.4rem;color:var(--accent)}
+.papers{display:grid;gap:.85rem}.paper{padding:1.15rem 1.25rem;background:var(--card);border:1px solid var(--line);border-radius:.5rem}.paper.featured{border-inline-start:3px solid var(--accent);background:#fafdff}.paper .label{color:var(--accent);margin-bottom:.3rem}
+h3{font-size:1.13rem;line-height:1.35;letter-spacing:-.02em}.paper h3 a{color:var(--ink);text-decoration:none}.paper h3 a:hover{text-decoration:underline}.paper p:not(.label),.row p:not(.label){color:var(--sub);margin-top:.33rem}.links{margin-top:.65rem;display:flex;gap:.3rem 1rem;flex-wrap:wrap;font-size:.87rem;font-weight:600}
+.row{padding:.95rem 0 1.05rem;border-bottom:1px solid var(--line)}.row:first-child{padding-top:0}.row:last-child{border-bottom:none;padding-bottom:0}.row .label{margin-bottom:.25rem}
+footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.55rem;padding:1.4rem 0 2.2rem;border-top:1px solid var(--line);color:var(--quiet);font-size:.86rem}
+@media(max-width:46rem){.hero{grid-template-columns:1fr}.figure{max-width:34rem}.section{grid-template-columns:1fr}}
+@media(max-width:29rem){.wrap{width:calc(100% - 2rem)}.top{align-items:flex-start;flex-direction:column;gap:.35rem}.top nav{gap:.25rem .9rem}.hero{padding-top:2.6rem}.paper{padding:1rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+<header class="top">
+<a href="#main" class="home">Ethan Ma</a>
+<nav aria-label="Main navigation"><a href="#research">Research</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="https://github.com/timewait">GitHub ↗</a></nav>
+</header>
+<main id="main">
+<section class="hero" aria-labelledby="name">
+<div>
+<p class="eyebrow">Applied machine learning · AI security</p>
+<h1 id="name">Ethan Ma</h1>
+<p class="alias">Zhiyong Ma <span lang="zh-Hans">马智勇</span></p>
+<p class="lead">I work on search, data quality, and how to control the use of data in AI systems.</p>
+<p class="intro">My engineering work spans product understanding, place data, and large-scale data systems. My research explores model-specific data authorization and representations.</p>
+<div class="actions"><a class="primary" href="#research">Read selected papers ↓</a><a href="https://github.com/timewait">GitHub profile ↗</a></div>
+</div>
+<figure class="figure">
+<svg viewBox="0 0 384 288" role="img" aria-labelledby="field-title">
+<title id="field-title">Abstract diagram of several signal paths and a highlighted path</title>
+<defs><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#c7d8e7" stroke-width=".8"/></pattern><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#eef5fa"/><stop offset="1" stop-color="#dae7f3"/></linearGradient></defs>
+<rect width="384" height="288" fill="url(#bg)"/><rect width="384" height="288" fill="url(#grid)"/>
+<g fill="none" stroke="#809cb4" stroke-width="1.15" opacity=".85"><path d="M36 220L132 172L204 196L348 124"/><path d="M36 182L132 134L204 158L348 86"/><path d="M36 143L132 95L204 119L348 47"/><path d="M36 258L132 210L204 234L348 162"/><path d="M132 95V210M204 119V234M300 71V186" stroke-dasharray="3 6"/></g>
+<path d="M36 182L132 134L204 158L300 110L348 86" fill="none" stroke="#2a6095" stroke-width="2.8"/>
+<g fill="#f6faff" stroke="#2a6095" stroke-width="1.8"><circle cx="36" cy="182" r="4"/><circle cx="132" cy="134" r="4"/><circle cx="204" cy="158" r="4"/><circle cx="300" cy="110" r="4"/><circle cx="348" cy="86" r="4"/></g>
+<circle cx="204" cy="158" r="14" fill="none" stroke="#2a6095" stroke-opacity=".45"/>
+</svg>
+<figcaption>Research focus / Model-specific authorization</figcaption>
+</figure>
+</section>
+
+<section class="section" id="research" aria-labelledby="research-title">
+<div class="section-head"><span class="index">01 / Papers</span><h2 id="research-title">Research</h2></div>
+<div class="papers">
+<article class="paper featured">
+<p class="label">NeurIPS 2026 · Oral</p>
+<h3><a href="https://arxiv.org/abs/2510.10982v3">Catch-Only-One: Non-Transferable Examples for Model-Specific Authorization</a></h3>
+<p>Recodes inputs to preserve their utility for an authorized model while reducing utility on other models evaluated. Listed as a core contributor in the manuscript.</p>
+<div class="links"><a href="https://arxiv.org/abs/2510.10982v3">Paper ↗</a><a href="https://trusted-system-lab.github.io/model-specificity/">Project page ↗</a><a href="https://github.com/model-specific/non-transferable-examples">Code ↗</a></div>
+</article>
+<article class="paper">
+<p class="label">The Web Conference 2025 · ACM</p>
+<h3><a href="https://doi.org/10.1145/3696410.3714737">AI Model Modulation with Logits Redistribution</a></h3>
+<p>Studies how redistributing logits can modulate the outputs of a model.</p>
+<div class="links"><a href="https://doi.org/10.1145/3696410.3714737">ACM paper ↗</a></div>
+</article>
+<article class="paper">
+<p class="label">SiMLA 2026 · ACNS Workshop</p>
+<h3><a href="https://arxiv.org/abs/2604.06644v2">Variational Feature Compression for Model-Specific Representations</a></h3>
+<p>Explores feature compression for representations tailored to a designated model.</p>
+<div class="links"><a href="https://arxiv.org/abs/2604.06644v2">Paper ↗</a><a href="https://simlaacns.github.io/contents/SiMLA2026/contents/acceptedpapers.html">Workshop ↗</a></div>
+</article>
+</div>
+</section>
+
+<section class="section" id="experience" aria-labelledby="experience-title">
+<div class="section-head"><span class="index">02 / Industry</span><h2 id="experience-title">Experience</h2></div>
+<div>
+<article class="row"><p class="label">Algorithm engineering</p><h3>JD Retail</h3><p>Work on product understanding for search, including brand, model and attribute recognition and product knowledge graphs.</p></article>
+<article class="row"><p class="label">Mapping &amp; machine learning</p><h3>Meituan</h3><p>Led a team working on point-of-interest discovery, coordinate accuracy and address quality.</p></article>
+<article class="row"><p class="label">Local services</p><h3>Alibaba</h3><p>Built algorithms to discover new businesses and designed a platform to run automated content review models.</p></article>
+<article class="row"><p class="label">Data &amp; infrastructure</p><h3>Yidu Cloud and Qunar</h3><p>Earlier work on healthcare data search, data pipelines, job scheduling and retrieval for customer support.</p></article>
+</div>
+</section>
+
+<section class="section" id="education" aria-labelledby="education-title">
+<div class="section-head"><span class="index">03 / Background</span><h2 id="education-title">Education</h2></div>
+<div>
+<article class="row"><p class="label">2025</p><h3>The University of Queensland</h3><p>Master of Engineering Science (Software Engineering).</p></article>
+<article class="row"><p class="label">2014</p><h3>Changchun University of Technology</h3><p>Bachelor’s degree in Computer Science and Technology.</p></article>
+</div>
+</section>
+</main>
+<footer><span>Ethan (Zhiyong) Ma</span><a href="https://github.com/timewait">github.com/timewait ↗</a></footer>
+</div>
+</body>
+</html>
