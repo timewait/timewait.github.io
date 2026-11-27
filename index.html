@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Ethan (Zhiyong) Ma works on search, data quality, and AI security. Selected research and engineering experience.">
+<meta name="description" content="Ethan (Zhiyong) Ma works on search, data quality, and AI security. Publications and engineering experience.">
 <meta name="theme-color" content="#f7f8f6">
 <meta property="og:title" content="Ethan Ma | Applied ML & AI Security">
-<meta property="og:description" content="Selected research and engineering work by Ethan (Zhiyong) Ma.">
+<meta property="og:description" content="Publications and engineering work by Ethan (Zhiyong) Ma.">
 <meta property="og:type" content="website">
 <title>Ethan Ma | Applied ML &amp; AI Security</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b3463'/%3E%3Cpath d='M17 16h30v6H23v7h20v6H23v7h24v6H17z' fill='%23e5f0ff'/%3E%3C/svg%3E">
@@ -35,6 +35,7 @@ footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.55rem;padd
 @media(max-width:46rem){.hero{grid-template-columns:1fr}.figure{max-width:34rem}.section{grid-template-columns:1fr}}
 @media(max-width:29rem){.wrap{width:calc(100% - 2rem)}.top{align-items:flex-start;flex-direction:column;gap:.35rem}.top nav{gap:.25rem .9rem}.hero{padding-top:2.6rem}.paper{padding:1rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.paper p.authors{font-size:.89rem;line-height:1.55;margin-top:.5rem}.paper .authors strong{color:var(--ink);font-weight:750}.paper p.related{margin-top:.8rem;padding-top:.65rem;border-top:1px solid var(--line);font-size:.84rem}
 </style>
 </head>
 <body>
@@ -51,8 +52,8 @@ footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.55rem;padd
 <h1 id="name">Ethan Ma</h1>
 <p class="alias">Zhiyong Ma <span lang="zh-Hans">马智勇</span></p>
 <p class="lead">I work on search, data quality, and how to control the use of data in AI systems.</p>
-<p class="intro">My engineering work spans product understanding, place data, and large-scale data systems. My research explores model-specific data authorization and representations.</p>
-<div class="actions"><a class="primary" href="#research">Read selected papers ↓</a><a href="https://github.com/timewait">GitHub profile ↗</a></div>
+<p class="intro">My engineering work spans product understanding, place data, and large-scale data systems. My research explores model-specific data authorization, representations, and graph generation.</p>
+<div class="actions"><a class="primary" href="#research">Read publications ↓</a><a href="https://github.com/timewait">GitHub profile ↗</a></div>
 </div>
 <figure class="figure">
 <svg viewBox="0 0 384 288" role="img" aria-labelledby="field-title">
@@ -69,25 +70,36 @@ footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.55rem;padd
 </section>
 
 <section class="section" id="research" aria-labelledby="research-title">
-<div class="section-head"><span class="index">01 / Papers</span><h2 id="research-title">Research</h2></div>
+<div class="section-head"><span class="index">01 / Research</span><h2 id="research-title">Publications</h2></div>
 <div class="papers">
 <article class="paper featured">
 <p class="label">NeurIPS 2026 · Oral</p>
 <h3><a href="https://arxiv.org/abs/2510.10982v3">Catch-Only-One: Non-Transferable Examples for Model-Specific Authorization</a></h3>
-<p>Recodes inputs to preserve their utility for an authorized model while reducing utility on other models evaluated. Listed as a core contributor in the manuscript.</p>
-<div class="links"><a href="https://arxiv.org/abs/2510.10982v3">Paper ↗</a><a href="https://trusted-system-lab.github.io/model-specificity/">Project page ↗</a><a href="https://github.com/model-specific/non-transferable-examples">Code ↗</a></div>
-</article>
-<article class="paper">
-<p class="label">The Web Conference 2025 · ACM</p>
-<h3><a href="https://doi.org/10.1145/3696410.3714737">AI Model Modulation with Logits Redistribution</a></h3>
-<p>Studies how redistributing logits can modulate the outputs of a model.</p>
-<div class="links"><a href="https://doi.org/10.1145/3696410.3714737">ACM paper ↗</a></div>
+<p class="authors">Zihan Wang, <strong>Ethan (Zhiyong) Ma</strong>, Zhongkui Ma, Shuofeng Liu, Akide Liu, Derui Wang, Minhui Xue, Guangdong Bai</p>
+<p>Recodes inputs to stay useful to a designated model while reducing their utility on other models tested. The manuscript identifies Zihan Wang and Ethan Ma as core contributors.</p>
+<div class="links"><a href="https://arxiv.org/abs/2510.10982v3">Paper ↗</a><a href="https://neurips.cc/virtual/2026/poster/151014">NeurIPS ↗</a><a href="https://github.com/model-specific/non-transferable-examples">Code ↗</a></div>
+<p class="related">Related workshop recognition: the Non-Transferable Examples work was reported as Best Paper Runner-Up at the ECCV 2026 LifeGenIP Workshop. <a href="https://www.zihan.com.au/">Coauthor’s announcement ↗</a></p>
 </article>
 <article class="paper">
 <p class="label">SiMLA 2026 · ACNS Workshop</p>
 <h3><a href="https://arxiv.org/abs/2604.06644v2">Variational Feature Compression for Model-Specific Representations</a></h3>
-<p>Explores feature compression for representations tailored to a designated model.</p>
+<p class="authors">Zinan Guo, Zihan Wang, Chuan Yan, Liuhuo Wan, <strong>Zhiyong (Ethan) Ma</strong>, Guangdong Bai</p>
+<p>Studies how to compress features into representations tailored to a designated model.</p>
 <div class="links"><a href="https://arxiv.org/abs/2604.06644v2">Paper ↗</a><a href="https://simlaacns.github.io/contents/SiMLA2026/contents/acceptedpapers.html">Workshop ↗</a></div>
+</article>
+<article class="paper">
+<p class="label">The Web Conference 2025 · ACM</p>
+<h3><a href="https://doi.org/10.1145/3696410.3714737">AI Model Modulation with Logits Redistribution</a></h3>
+<p class="authors">Zihan Wang, Zhongkui Ma, Xinguo Feng, Zhiyang Mei, <strong>Ethan Ma</strong>, Derui Wang, Minhui Xue, Guangdong Bai</p>
+<p>Studies how redistributing logits can change a model’s utility across tasks.</p>
+<div class="links"><a href="https://doi.org/10.1145/3696410.3714737">ACM paper ↗</a><a href="https://arxiv.org/abs/2603.12755">arXiv ↗</a></div>
+</article>
+<article class="paper">
+<p class="label">arXiv preprint · 2026</p>
+<h3><a href="https://arxiv.org/abs/2609.05328">Embedded Graph Flows for Categorical Graph Generation</a></h3>
+<p class="authors"><strong>Ethan Ma</strong>, Zihan Wang, Chris Siu Yeung Chow, Xinguo Feng, Qingqing Li, Rui Jiang, Naipeng Dong, Guangdong Bai</p>
+<p>Uses learned node and edge embeddings and flow matching to generate categorical graphs.</p>
+<div class="links"><a href="https://arxiv.org/abs/2609.05328">Preprint ↗</a><a href="https://github.com/Trusted-System-Lab/EGF">Code ↗</a></div>
 </article>
 </div>
 </section>
