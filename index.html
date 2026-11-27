@@ -36,6 +36,7 @@ footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.55rem;padd
 @media(max-width:29rem){.wrap{width:calc(100% - 2rem)}.top{align-items:flex-start;flex-direction:column;gap:.35rem}.top nav{gap:.25rem .9rem}.hero{padding-top:2.6rem}.paper{padding:1rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .paper p.authors{font-size:.89rem;line-height:1.55;margin-top:.5rem}.paper .authors strong{color:var(--ink);font-weight:750}.paper p.related{margin-top:.8rem;padding-top:.65rem;border-top:1px solid var(--line);font-size:.84rem}
+.portrait img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:50% 62%}
 </style>
 </head>
 <body>
@@ -55,17 +56,9 @@ footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.55rem;padd
 <p class="intro">My engineering work spans product understanding, place data, and large-scale data systems. My research explores model-specific data authorization, representations, and graph generation.</p>
 <div class="actions"><a class="primary" href="#research">Read publications ↓</a><a href="https://github.com/timewait">GitHub profile ↗</a></div>
 </div>
-<figure class="figure">
-<svg viewBox="0 0 384 288" role="img" aria-labelledby="field-title">
-<title id="field-title">Abstract diagram of several signal paths and a highlighted path</title>
-<defs><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#c7d8e7" stroke-width=".8"/></pattern><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#eef5fa"/><stop offset="1" stop-color="#dae7f3"/></linearGradient></defs>
-<rect width="384" height="288" fill="url(#bg)"/><rect width="384" height="288" fill="url(#grid)"/>
-<g fill="none" stroke="#809cb4" stroke-width="1.15" opacity=".85"><path d="M36 220L132 172L204 196L348 124"/><path d="M36 182L132 134L204 158L348 86"/><path d="M36 143L132 95L204 119L348 47"/><path d="M36 258L132 210L204 234L348 162"/><path d="M132 95V210M204 119V234M300 71V186" stroke-dasharray="3 6"/></g>
-<path d="M36 182L132 134L204 158L300 110L348 86" fill="none" stroke="#2a6095" stroke-width="2.8"/>
-<g fill="#f6faff" stroke="#2a6095" stroke-width="1.8"><circle cx="36" cy="182" r="4"/><circle cx="132" cy="134" r="4"/><circle cx="204" cy="158" r="4"/><circle cx="300" cy="110" r="4"/><circle cx="348" cy="86" r="4"/></g>
-<circle cx="204" cy="158" r="14" fill="none" stroke="#2a6095" stroke-opacity=".45"/>
-</svg>
-<figcaption>Research focus / Model-specific authorization</figcaption>
+<figure class="figure portrait">
+<img src="./assets/sydney-harbour.webp" width="960" height="1280" alt="Ethan Ma standing by the water with the Sydney Harbour Bridge behind him" fetchpriority="high" decoding="async">
+<figcaption>Sydney Harbour, Australia</figcaption>
 </figure>
 </section>
 
